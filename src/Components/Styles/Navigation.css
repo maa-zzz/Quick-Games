@@ -1,0 +1,42 @@
+.sidenav {
+  height: 100%;
+  width: 90px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0%;
+  background-color: #eeeeee;
+  overflow-x: hidden;
+  padding-top: 20px;
+  box-shadow: 2px 5px 5px #393e46;
+  box-shadow: 2px 5px 5px #393e46; /* Add a shadow below the navbar */
+  text-align: center;
+}
+.navi {
+  background-color: #c4fb6d;
+  color: #393e46;
+}
+.flexList {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
+}
+.logo {
+  height: 60px;
+  width: auto;
+}
+.navLink {
+  text-decoration: none;
+}
+
+.iconButton {
+  font-size: 24px !important;
+  color: #0074c3 !important;
+}
+
+.activeIconButton {
+  font-size: 24px !important;
+  color: #ff4759 !important;
+}

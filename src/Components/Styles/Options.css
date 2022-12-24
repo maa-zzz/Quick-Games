@@ -1,0 +1,37 @@
+.Grids {
+  margin-top: 4%;
+  margin-bottom: 4%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-left: 2%;
+  padding-right: 2%;
+  border-radius: 24px;
+}
+.h-100:hover {
+  box-shadow: 4px 4px #7b9948;
+}
+.h-100 {
+  /* border-color: #76ead7; */
+  border-width: 10px;
+  border-style: outset;
+  border-radius: 22px;
+  /* background: #76ead7; */
+  width: 100%;
+  height: auto;
+  box-shadow: 10px 5px 5px #3824248c;
+  position: relative;
+}
+.MDBCardImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+
+}
+.container{
+  margin:auto;
+}
+

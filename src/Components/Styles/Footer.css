@@ -1,0 +1,12 @@
+.signature {
+  background-color: #393e46;
+  color: #eeeeee;
+  position: fixed;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+}

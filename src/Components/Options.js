@@ -71,8 +71,9 @@ export default function Options() {
                 alt="..."
                 loading="lazy"
               />
-
-              <button type="button" class="btn btn-info btn-block">Coming Soon!</button>
+              <Link to="/ConnectFourAI" class="center-link" >
+              <button type="button" class="btn btn-info btn-block">Connect Four AI</button>
+              </Link>
             </MDBCardBody>
           </MDBCard>
         </MDBCol>

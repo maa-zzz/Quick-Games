@@ -97,7 +97,22 @@ export default function TicTacToe() {
       </ul>
     );
   });
-
+  let undo;
+    if (!stepNumber) {
+        undo = <button className="btn btn-success" disabled>Undo</button>;
+      } else {
+        const move = stepNumber - 1;
+        undo = (
+          <button
+            className="btn btn-success"
+            onClick={() => {
+              jumpTo(move);
+            }}
+          >
+            Undo
+          </button>
+        );
+      }
   let status;
   if (winner) {
     status = "Winner: " + winner;
@@ -122,7 +137,7 @@ export default function TicTacToe() {
             <Board squares={current.squares} onClick={(i) => handleClick(i)} />
           </div>
           <div className="game-info">
-            <ol>{moves}</ol>
+            <ol>{undo}</ol>
           </div>
         </div>
         <br/>

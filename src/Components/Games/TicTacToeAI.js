@@ -195,21 +195,6 @@ export default function Game() {
     setXIsNext((step % 2) === 0);
   }
 
-//   const makeAiMove = () => {
-//     const newHistory = history.slice(0, stepNumber + 1);
-//     const current = history[newHistory.length - 1];
-//     const squares = current.squares.slice();
-//     const move = minimax(squares);
-//     if (calculateWinner(squares) || squares[move]) {
-//       return;
-//     }
-//     squares[move] = xIsNext ? "X" : "O";
-//     setHistory(newHistory.concat([{
-//       squares: squares
-//     }]));
-//     setStepNumber(newHistory.length);
-//     setXIsNext(!xIsNext);
-//   }
 
 const makeAiMove = () => {
     const newHistory = history.slice(0, stepNumber + 1);
@@ -245,7 +230,7 @@ const makeAiMove = () => {
     if (!stepNumber) {
         undo = <button className="btn btn-success" disabled>Undo</button>;
       } else {
-        const move = stepNumber - 1;
+        const move = Math.max(0,stepNumber - 2);
         undo = (
           <button
             className="btn btn-success"
@@ -263,7 +248,7 @@ const makeAiMove = () => {
   } else {
     const tie = terminal(current.squares);
     if (tie) status = <div className="tie">Tie</div>;
-    else status = `Turn : ${xIsNext ? 'X' : 'O'}`;
+    else status = `${xIsNext ? 'AI' : 'Player'}`+"'s turn";
   }
 
   return (
@@ -297,32 +282,6 @@ const makeAiMove = () => {
         <Footer />
       </div>
     </>
-    // <>
-    // <Nav />
-    //   <br/>
-    //   <div class="container">
-    //   <h1> TIC-TAC-TOE AI </h1>
-    //   <br/>
-      
-    //   <div className="game-board">
-    //     <Board
-    //       squares={current.squares}
-    //       onClick={handleClick}
-    //     />
-    //   </div>
-    //   <div className="game-info">
-    //     {undo}
-    //     <button
-    //       className="btn btn-success"
-    //       onClick={() => { jumpTo(0); }}
-    //     >
-    //       Restart
-    //     </button>
-    //     <div className="game-status">{status}</div>
-    //   </div>
-    //   <Footer/>
-    // </div>
-    // </>
   );
 }
 

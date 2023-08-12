@@ -17,14 +17,14 @@ export default function Options() {
           <MDBCard className="h-100" alignment="center">
             <MDBCardBody>
               <MDBCardImage
-                src="https://img.icons8.com/external-prettycons-flat-prettycons/512/external-tic-tac-toe-games-prettycons-flat-prettycons.png"
+                src="https://th.bing.com/th/id/OIG.PNk0N1IT5cNpwoTNi_QN?pid=ImgGn"
                 width="50%"
                 height="auto"
                 alt="..."
                 loading="lazy"
               />
-              <Link to="/TicTacToe">
-                <button type="button" class="btn btn-info btn-block">TicTacToe</button>
+              <Link to="/TicTacToe" class="center-link">
+                <button type="button" class="btn btn-info btn-block">TicTacToe 2P</button>
               </Link>
             </MDBCardBody>
           </MDBCard>
@@ -33,13 +33,13 @@ export default function Options() {
           <MDBCard className="h-100" alignment="center">
             <MDBCardBody>
               <MDBCardImage
-                src="https://img.icons8.com/external-prettycons-flat-prettycons/512/external-tic-tac-toe-games-prettycons-flat-prettycons.png"
+                src="https://th.bing.com/th/id/OIG.xHDZa4KVhpXsWww4kOFh?pid=ImgGn"
                 width="50%"
                 height="auto"
                 alt="..."
                 loading="lazy"
               />
-              <Link to="/TicTacToeAI">
+              <Link to="/TicTacToeAI" class="center-link">
                 <button type="button" class="btn btn-info btn-block">TicTacToe AI</button>
               </Link>
             </MDBCardBody>
@@ -49,13 +49,13 @@ export default function Options() {
           <MDBCard className="h-100" alignment="center">
             <MDBCardBody>
               <MDBCardImage
-                src="https://t3.ftcdn.net/jpg/04/06/93/82/360_F_406938253_AneDCdBsJJic1FpXtQFG929pNAV9m0wm.jpg"
+                src="https://th.bing.com/th/id/OIG.V0uw4NzSjSa3qsau_.3z?pid=ImgGn"
                 width="50%"
                 height="auto"
                 alt="..."
                 loading="lazy"
               />
-              <Link to="/ConnectFour">
+              <Link to="/ConnectFour" class="center-link" >
                 <button type="button" class="btn btn-info btn-block">Connect Four</button>
               </Link>
             </MDBCardBody>
@@ -65,13 +65,13 @@ export default function Options() {
           <MDBCard className="h-100" alignment="center">
             <MDBCardBody>
               <MDBCardImage
-                src="https://img.icons8.com/color/512/coming-soon.png"
+                src="https://th.bing.com/th/id/OIG.Uam._yG0XYrM.KgeWu_M?pid=ImgGn"
                 width="50%"
                 height="auto"
                 alt="..."
                 loading="lazy"
               />
-              
+
               <button type="button" class="btn btn-info btn-block">Coming Soon!</button>
             </MDBCardBody>
           </MDBCard>

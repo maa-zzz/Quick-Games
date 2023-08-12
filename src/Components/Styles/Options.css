@@ -15,28 +15,58 @@
 
 .h-100:hover {
   transform: scale(1.05); /* Increase the size a bit */
-  box-shadow: 4px 4px 10px 0px rgba(123, 153, 72, 0.7), -4px -4px 10px 0px rgba(123, 153, 72, 0.7);
+  box-shadow: 4px 4px 10px 0px rgba(72, 153, 144, 0.7), -4px -4px 10px 0px rgba(108, 148, 198, 0.7);
+}
+.center-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .h-100 {
-  /* border-color: #76ead7; */
   border-width: 10px;
   border-style: outset;
   border-radius: 22px;
-  /* background: #76ead7; */
   width: 100%;
   height: auto;
   box-shadow: 10px 5px 5px #3824248c;
   position: relative;
 }
-.MDBCardImage {
+.card-img-top {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* Use 'contain' to keep the image aspect ratio and center it */
+  max-height: 200px; /* Set a max-height to limit the image size */
+}
+
+.card-body {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin: auto;
-
+  padding: 20px;
+  height: 100%; /* Add this to make sure the card body takes up full height */
 }
+/* Adjust the alignment of the card body */
+.custom-card-body {
+  border-width: 10px;
+  border-style: outset;
+  border-radius: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Center the button horizontally */
+.Link {
+  display: block;
+  margin: 0 auto;
+}
+
 .container{
   margin:auto;
 }

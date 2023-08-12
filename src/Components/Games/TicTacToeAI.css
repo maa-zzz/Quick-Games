@@ -1,0 +1,119 @@
+h1 {
+    color: #eee;
+    text-align: center;
+}
+
+h2 {
+    text-align: left;
+}
+
+.App {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+body {
+    background: #222;
+    font-family: consolas;
+}
+
+.game {
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: #333; */
+    color: #fff;
+    position: relative;
+}
+
+.game-board {
+    margin: auto;
+    padding: auto;
+    position: center;
+}
+
+.square {
+    padding: 8px 12px;
+  margin: 2px;
+  background: transparent;
+  color: #62fffc;
+  width: 100px;
+  border-radius: 10px;
+  transition: 0.2s;
+  font-weight: bold;
+  width: 80px;
+  height: 80px;
+  border: 2px solid #eee;
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.square:focus {
+    outline: 1px;
+}
+
+.board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.game-info {
+    margin-right: 10rem;
+    padding: 1rem;
+    position: absolute;
+}
+
+.bottom {
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+    margin-left: auto;
+    width: 50%;
+}
+
+.status {
+    color: #FFDB89;
+    text-align: left;
+}
+
+/* Additional Changes */
+
+/* body {
+    font: 14px "Century Gothic", Futura, sans-serif;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    background-color: #161625!important;
+    color: #bdbdbd!important;
+} */
+
+/* #root {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+} */
+
+
+/* 
+.kbd-navigation .square:focus {
+    background: #ddd;
+} */
+
+.winner {
+    color: #FFDB89;
+  text-align: left;
+}
+
+.tie {
+    color: #FFDB89;
+  text-align: left;
+}
+
+/* .prompt {
+    margin-bottom: 1rem;
+} */

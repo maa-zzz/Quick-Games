@@ -114,7 +114,6 @@ export default function TicTacToe() {
     <>
       <Nav />
       <br/>
-      {/* <br/>  */}
       <div class="container">
         <h1> TIC-TAC-TOE </h1>
         <br/>
@@ -144,3 +143,4 @@ export default function TicTacToe() {
     </>
   );
 }
+

@@ -9,9 +9,15 @@
   padding-right: 2%;
   border-radius: 24px;
 }
-.h-100:hover {
-  box-shadow: 4px 4px #7b9948;
+.h-100 {
+  transition: transform 0.3s, box-shadow 0.3s;
 }
+
+.h-100:hover {
+  transform: scale(1.05); /* Increase the size a bit */
+  box-shadow: 4px 4px 10px 0px rgba(123, 153, 72, 0.7), -4px -4px 10px 0px rgba(123, 153, 72, 0.7);
+}
+
 .h-100 {
   /* border-color: #76ead7; */
   border-width: 10px;
